@@ -16,8 +16,10 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
 
 - AWS (or most services) interact with the means of API.
 - AWS CLI (in the backend) uses API call to interact with your AWS Account and then create Resources like(EC2,S3,VPC and a lot other).
-- It is like doing the same thing that you do via your AWS Dashboard (in the backend you are actually making API Calls)
-Why AWS CLI ? Because whoever has used Linux, knows and understands the `Power of CLI`.
+- It is like doing the same thing that you do via your AWS Dashboard (in the backend you are actually making API Calls) with multiple selections and clicks.
+- Very Important Part: A True Engineer is someone who first understand the working of a software (tries it multiple times) and then tries to Automate it. AWS CLI is the way to automate this repetetive process.
+- You can write scripts that will run multiple aws cli options and built a complete aws setup (a project) within few minutes.
+- Why AWS CLI ? Because whoever has used Linux, knows and understands the `Power of CLI`.
 
 Example : To Create a S3 Bucket:
 
