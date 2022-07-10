@@ -13,7 +13,7 @@
 
 <br>
 
-## Before begining with AWS
+## Before beginning with AWS
 
 - Learn Networking
     * You are aware about: Routing(practical), NATing(theory)
@@ -38,14 +38,14 @@
 - Subnets
    * Private Subnets
    * Public Subnets
-   * How to create a Private & Public Subnet and how they are different (get aware of the important element of differentiater & where to use one)
+   * How to create a Private & Public Subnet and how they are different (get aware of the important element of differentiation & where to use one)
 - Route Table (Routing is always the key of Networking)
 - Internet Gateway (IGW)
 - VPN Gateway (VGW) 
 - Security Groups & NACL (Network ACL)
-    * How to create a SG & NACL and how they are different (get aware of the important element of differentiater & where to use one)
+    * How to create a SG & NACL and how they are different (get aware of the important element of differentiation & where to use one)
 - Public IP & Elastic IP
-    * How to create a Public IP & Elastic IP and how they are different (get aware of the important element of differentiater & where to use one)
+    * How to create a Public IP & Elastic IP and how they are different (get aware of the important element of differentiation & where to use one)
 
 <br/>
 

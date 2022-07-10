@@ -17,7 +17,7 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
 - AWS (or most services) interact with the means of API.
 - AWS CLI (in the backend) uses API call to interact with your AWS Account and then create Resources like(EC2,S3,VPC and a lot other).
 - It is like doing the same thing that you do via your AWS Dashboard (in the backend you are actually making API Calls) with multiple selections and clicks.
-- Very Important Part: A True Engineer is someone who first understand the working of a software (tries it multiple times) and then tries to Automate it. AWS CLI is the way to automate this repetetive process.
+- Very Important Part: A True Engineer is someone who first understand the working of a software (tries it multiple times) and then tries to Automate it. AWS CLI is the way to automate this repetitive process.
 - You can write scripts that will run multiple aws cli options and built a complete aws setup (a project) within few minutes.
 - Why AWS CLI ? Because whoever has used Linux, knows and understands the `Power of CLI`.
 
@@ -34,7 +34,7 @@ aws s3api create-bucket --bucket bucket-no1-67121 --region us-east-1
 
 You will require to do few things first
 
-###### Pre-requistes
+###### Pre-requisites
 - Have a AWS (I would suggest go with ACloudGuru)
 - Create an IAM User with Admin Access
 - Create Access keys(Access Keys + Secret Keys)
