@@ -12,7 +12,7 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
 
 ---
 
-###### In Simple words (as per my understanding): 
+<b> In Simple words (as per my understanding): </b> 
 
 - AWS (or most services) interact with the means of API.
 - AWS CLI (in the backend) uses API call to interact with your AWS Account and then create Resources like(EC2,S3,VPC and a lot other).
