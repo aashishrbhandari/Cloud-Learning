@@ -19,7 +19,7 @@
     * You are aware about: Routing(practical), NATing(theory)
 - Virtualization
     * You have created VMs in your machines for testing, dev or for something or maybe just to learn and deployed an Linux Instance
-- Overview view of a Simple Application deployment
+- Overview view of a Simple Application Architecture & Deployment
     * Understanding of a Simple 3-tier Application and it's simple overview of working.
 
 ## Things you should be well aware (Basic Building blocks of AWS) </b>
