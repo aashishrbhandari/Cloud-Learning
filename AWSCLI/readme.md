@@ -29,7 +29,8 @@ Just use the below line
 aws s3api create-bucket --bucket bucket-no1-67121 --region us-east-1
 ```
 
-<b> Note: Just by Running the Above Command, Things don;t work </b> 
+<b> Note: Just by Running the Above Command, Things don't work </b> 
+
 
 You will require to do few things first
 
@@ -42,3 +43,29 @@ You will require to do few things first
 - Install AWS CLI (awscli)
 - Set/Configure AWS Access Keys
 
+<br>
+
+## Simple Snippet to Get All EC2
+This Example Snippet is just to showcase what all things can be done using AWS CLI and further adding this to a bash script for further automation.
+
+> Note: This is a Small snippet which got from internet to get my work done. you can further add new fields to get more details. Just to add: the below code basically travers through the JSON response provided by (aws ec2 describe-instances) and then provides only fields mentioned in table format(--output=table)
+
+```bash
+aws ec2 describe-instances \
+    --query 'Reservations[*].Instances[*].{Instance:InstanceId,AZ:Placement.AvailabilityZone,Name:Tags[?Key==`Name`]|[0].Value,PublicIP:PublicIpAddress,PrivateIP:PrivateIpAddress}' \
+    --output table
+```
+
+Output:
+```
+----------------------------------------------------------------------------------------
+|                                   DescribeInstances                                  |
++------------+-----------------------+--------------+----------------+-----------------+
+|     AZ     |       Instance        |    Name      |   PrivateIP    |    PublicIP     |
++------------+-----------------------+--------------+----------------+-----------------+
+|  us-east-1a|  i-0824edff9ece6a36a  |  WebServer-1 |  10.30.1.254   |  18.234.248.77  |
+|  us-east-1a|  i-05cca13247fc4f031  |  DBServer-1  |  10.30.101.201 |  None           |
+|  us-east-1b|  i-0b0ce6247da0ea168  |  WebServer-2 |  10.30.2.68    |  54.89.221.17   |
+|  us-east-1b|  i-04fb53c235b5c4a45  |  DBServer-2  |  10.30.102.112 |  None           |
++------------+-----------------------+--------------+----------------+-----------------+
+```
