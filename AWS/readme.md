@@ -13,26 +13,26 @@
 
 <br>
 
-## Before begining with AWS
+## Before beginning with AWS
 
 - Learn Networking
     * You are aware about: Routing(practical), NATing(theory)
 - Virtualization
-    * You have created VMs in your machines for testing, dev or for something or maybe just to learn and deployed an Linux Instance
-- Overview view of a Simple Application Architecture & Deployment
+    * You have created VMs in your machines for testing, dev or for something or maybe just to learn and have deployed an Linux Instance
+- Overview of a Simple Application Architecture & Deployment
     * Understanding of a Simple 3-tier Application and it's simple overview of working.
 
 ## Things you should be well aware (Basic Building blocks of AWS) </b>
 
 <b> Overview & Awareness of the Platform: </b>
 - What is a Region? & No of Regions AWS has?
-- What is an AZ(Availability Zone) ? & what is significance of it?
+- What is an AZ(Availability Zone) ? & what is the significance of it?
 - What is an Edge Location?
 
 <br/>
 
 
-<b> Fundamentals & Practical Learning: </b>
+<b> Fundamentals (do Practical) Learning: </b>
 - VPC (Virtual Private Cloud)
 - AZ & Regions Selection
 - Subnets
