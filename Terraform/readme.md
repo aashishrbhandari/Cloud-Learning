@@ -89,8 +89,13 @@ You will be amazed to see that it takes less than 2 mins to create Infra of a VP
 I have a demo tf [@simple-infra-setup1](./projects/simple-setup1)
 
 
-Let's actually do it
-Above part is doc and command explanation, let's take a practice set
+### Let's actually do it
+<font size="3"> 
+    Above part is doc and command explanation, let's take a practice set
+   
+</font>
+<br/>
+
 
 > NOTE: I am just trying to list down steps, for basic steps like go ahead folder or copy code you will not find any command shown or given or result shown
 
