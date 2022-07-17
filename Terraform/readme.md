@@ -89,18 +89,19 @@ You will be amazed to see that it takes less than 2 mins to create Infra of a VP
 I have a demo tf [@simple-infra-setup1](./projects/simple-setup1)
 
 
-### Let's actually do it
+## [Practical] Let's actually do it
 <font size="3"> 
     Above part is doc and command explanation, let's take a practice set
    
 </font>
+<br>
 <br/>
 
 
 > NOTE: I am just trying to list down steps, for basic steps like go ahead folder or copy code you will not find any command shown or given or result shown
 
-Step1: Make sure you have the terraform binary download and added to ENV PATH
-Step2: let's use the above [@simple-tf](./simple-vpc-creator-mini.tf) for practice, download the file and add it to a folder and move inside the folder
+1. Make sure you have the terraform binary downloaded and added to ENV PATH
+2. let's use the above [@simple-tf](./simple-vpc-creator-mini.tf) for practice, download the file and add it to a folder and move inside the folder
 
 <details open>
     <summary>You can also go ahead </summary>
@@ -110,8 +111,8 @@ To have a better understanding of what Terraform can do, why it is called IaC an
 
 </details>
 
-Step3: let's do the `terraform init`.
-Step4: Only for this example let's go to `terraform apply -auto-approve`
+3. let's do the `terraform init`.
+4. Only for this example let's go to `terraform apply -auto-approve`
 
-__>>>__ *Now you might be wondering why we did not use `terraform fmt` and `terraform plan`, will in this case we knew the config file(it is a very basic simple VPC creator) and also we do not require format part*
+__>>>__ *Now you might be wondering why we did not use `terraform fmt` and `terraform plan`, well in this case we knew the config file(it is a very basic simple VPC creator) and also we do not require format part*
 
