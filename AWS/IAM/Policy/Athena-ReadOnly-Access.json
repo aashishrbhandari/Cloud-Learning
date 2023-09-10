@@ -1,0 +1,53 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AthenaBasicAccess",
+            "Effect": "Allow",
+            "Action": [
+                "athena:StartQueryExecution",
+                "athena:StopQueryExecution",
+                "athena:Get*",
+                "athena:List*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "GlueROAccess",
+            "Effect": "Allow",
+            "Action": [
+                "glue:GetDatabase*",
+                "glue:GetTable*"
+            ],
+            "Resource": [
+                "arn:aws:glue:${AWS_REGION}:${ACCOUNT_ID}:catalog",
+                "arn:aws:glue:${AWS_REGION}:${ACCOUNT_ID}:database/*",
+                "arn:aws:glue:${AWS_REGION}:${ACCOUNT_ID}table/*"
+            ]
+        },
+        {
+            "Sid": "ListBucketsRequiredByAthena",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "AthenaQueryToS3Bucket",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::${ATHENA_QUERYLOGS_S3_BUCKET}/${aws:username}/*"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "LambdaListAccess",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:ListFunctions",
+                "lambda:ListEventSourceMappings",
+                "lambda:ListLayerVersions",
+                "lambda:ListLayers",
+                "lambda:GetAccountSettings",
+                "lambda:ListCodeSigningConfigs"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "RestrictedLambdaFunctionAcess",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:Get*",
+                "lambda:List*",
+                "lambda:Create*",
+                "lambda:Delete*",
+                "lambda:Invoke*",
+                "lambda:Update*",
+                "lambda:Put*"
+            ],
+            "Resource": [
+                "arn:aws:lambda:${AWS_REGION}:${ACCOUNT_ID}:function:${LAMBDA_FUNCTION_NAME}",
+                "arn:aws:lambda:${AWS_REGION}:${ACCOUNT_ID}:function:${LAMBDA_FUNCTION_NAME}"
+            ]
+        }        
+    ]
+}
