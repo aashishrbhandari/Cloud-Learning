@@ -53,3 +53,32 @@ aws ec2 describe-instances --region us-east-1 --query 'Reservations[].Instances[
 +------------------------+---------+------+-------+--------+----------------------+-------------+
 
 ```
+
+3. Get All EC2 Instances
+
+
+```
+aws ec2 describe-instances --region us-east-1 --query 'Reservations[].Instances[].[InstanceId,PrivateIpAddress,Tags[?Key==`Name`].Value|[0]]' --output text | nl
+```
+
+4. Get All Running EC2 Instance with Counter
+
+```
+aws ec2 describe-instances --region us-east-1 --query 'Reservations[].Instances[].[InstanceId,PrivateIpAddress,Tags[?Key==`Name`].Value|[0]]' --filters "Name=instance-state-name,Values=running" --output text | nl
+```
+
+5. Get All EC2 Nodes Managed by SSM (Online meaning Managed Now)
+
+```
+aws ssm describe-instance-information  --filters "Key=PingStatus,Values=Online" --query 'InstanceInformationList[].[InstanceId,PingStatus,IPAddress]' --output text | nl
+```
+
+6. Get Count
+
+```
+
+aws ssm describe-instance-information  --filters "Key=PingStatus,Values=Online" --query 'InstanceInformationList[].[InstanceId,PingStatus,IPAddress]' --output text --region us-east-1 | wc -l
+
+aws ssm describe-instance-information  --filters "Key=PingStatus,Values=Online" --query 'InstanceInformationList[].[InstanceId,PingStatus,IPAddress]' --output text --region eu-west-1 | wc -l
+
+```
